@@ -19,15 +19,12 @@ namespace Piddle.NUnitExamples
         public void TestCalculateOffsetFromUtcNow4(string now, int seconds, string expected)
         {
             // GIVEN I have an instance of ClassToTest
-
             var instance = new ClassToTest(() => DateTimeOffset.Parse(now));
 
             // WHEN I call CalculateOffsetFromUtcNow with a TimeSpan
-
             var result = instance.CalculateOffsetFromUtcNow(TimeSpan.FromSeconds(seconds));
 
             // THEN it returns the correct DateTimeOffset.
-
             Assert.That(result, Is.EqualTo(DateTimeOffset.Parse(expected)), $"Expected a result of {expected}");
         }
     }
