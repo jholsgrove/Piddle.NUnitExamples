@@ -47,6 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClassToTest.cs" />
+    <Compile Include="NUnitExample4.cs" />
+    <Compile Include="NUnitExample3.cs" />
+    <Compile Include="NUnitExample2.cs" />
     <Compile Include="NUnitExample1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
